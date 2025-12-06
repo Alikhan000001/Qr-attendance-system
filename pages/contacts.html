@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | QR Attendance System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/style.css"> <!-- ../ для выхода из pages -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo"> <!-- ../ для выхода к index.html -->
+                    <i class="fas fa-qrcode"></i>
+                    <span>QR Attendance</span>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="../index.html"><i class="fas fa-home"></i> Главная</a></li>
+                        <li><a href="../index.html#scanner"><i class="fas fa-camera"></i> Сканер QR</a></li>
+                        <li><a href="../index.html#attendance"><i class="fas fa-list-check"></i> Посещаемость</a></li>
+                        <li><a href="../index.html#students"><i class="fas fa-users"></i> Студенты</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> О нас</a></li>
+                        <li><a href="contacts.html" class="active"><i class="fas fa-address-book"></i> Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="contacts-hero">
+        <div class="container">
+            <h1>Свяжитесь с нами</h1>
+            <p>Есть вопросы или предложения? Мы всегда рады помочь и ответить на все ваши вопросы</p>
+        </div>
+    </section>
+
+    <section class="contacts-content">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Наши контакты</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Адрес</h4>
+                            <p>г. Алматы, ул. Кабанбай батыра, 12</p>
+                            <p>Бизнес-центр "Education Tower", 5 этаж</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Телефон</h4>
+                            <p>+7 (727) 123-45-67</p>
+                            <p>+7 (701) 234-56-78 (мобильный)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@qrattendance.edu.kz</p>
+                            <p>support@qrattendance.edu.kz</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Часы работы</h4>
+                            <p>Понедельник - Пятница: 9:00 - 18:00</p>
+                            <p>Суббота: 10:00 - 15:00</p>
+                            <p>Воскресенье: выходной</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Отправить сообщение</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Ваше имя *</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email адрес *</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Тема сообщения</label>
+                            <input type="text" id="subject">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Сообщение *</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Отправить сообщение
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.7760361928535!2d76.91278731548467!3d43.23523497913778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883692f027581ad%3A0x2426740f56437e63!2z0JzQtdC20LTRj9C90YHRjNC60LjQuSDQv9C-0LvRjNGB0LrQsNGPINGD0LsuLCAxMiDQutC-0YDQv9GD0YEgMjEsINCQ0LvQvNCw0YLRiyAwNTAwMDA!5e0!3m2!1sru!2skz!4v1684167890123!5m2!1sru!2skz" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>QR Attendance System</h3>
+                    <p>Система учета посещаемости студентов с использованием QR-кодов для образовательных учреждений.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="../index.html#scanner">Сканер QR</a></li>
+                        <li><a href="../index.html#attendance">Посещаемость</a></li>
+                        <li><a href="../index.html#students">Студенты</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Алматы, ул. Кабанбай батыра, 12</p>
+                    <p><i class="fas fa-phone"></i> +7 (727) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@qrattendance.edu.kz</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 QR Attendance System. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+            this.innerHTML = navMenu.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Сообщение отправлено! Мы свяжемся с вами в ближайшее время.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
